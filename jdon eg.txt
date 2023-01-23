@@ -1,0 +1,38 @@
+Resume data in json format :-
+
+const resume = {
+    "personal_info": {
+        "name": "srikanth",
+        "email": "srikangh@email.com",
+        "phone": "555-555-5555",
+        "location": "New York, NY"
+    },
+    "work_experience": [
+        {
+            "title": "Software Engineer",
+            "company": "Google",
+            "location": "Mountain View, CA",
+            "dates": "January 2019 - Present",
+            "description": "Developing and maintaining web applications using JavaScript and React."
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Apple",
+            "location": "Cupertino, CA",
+            "dates": "June 2022 - December 2040",
+            "description": "Building and deploying web and mobile applications using JavaScript and Swift."
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "school": "University of California, Berkeley",
+            "dates": "2016 - 2020",
+            "description": "Focus on software development and data structures."
+        }
+    ],
+    "skills": [
+        "JavaScript", "React", "Swift", "Node.js", "Express.js", "MongoDB"
+    ]
+}
+console.log(resume)

@@ -1,0 +1,12 @@
+JSON iterations on forin loop
+
+var alien = {
+    student : 'srikanth' ,
+    from : 'chennai' ,
+    skill : 'js'
+}
+for (let key in alien)
+{
+console.log(key + " :", alien[key]);
+
+Note: as per mentor guidance , the above topic is explained and  remaining are yet to move forward ,

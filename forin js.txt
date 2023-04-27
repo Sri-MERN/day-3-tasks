@@ -8,5 +8,36 @@ var alien = {
 for (let key in alien)
 {
 console.log(key + " :", alien[key]);
+-------------------
+for loop:
+You can use a for loop to iterate over a JSON object by using its keys.
 
-Note: as per mentor guidance , the above topic is explained and  remaining are yet to move forward ,
+let jsonObj = {"name": "srikanth", "age": 24, "city": "New York"};
+
+for(let key in jsonObj){
+  console.log(key + " : " + jsonObj[key]);
+}
+--------------------
+for..in loop:
+You can also use a for..in loop to iterate over a JSON object by using its keys.
+
+let jsonObj = {"name": "srikanth", "age": 24, "city": "New York"};
+
+for(let key in jsonObj){
+  console.log(key + " : " + jsonObj[key]);
+}
+--------------------
+forEach method:
+You cannot use the forEach method to iterate over a JSON object as it is designed to work with arrays. However, you can convert the JSON object into an array and then use the forEach method to iterate over it.
+
+let jsonObj = {"name": "srikanth", "age": 24, "city": "New York"};
+
+let arr = [];
+
+for(let key in jsonObj){
+  arr.push(key + " : " + jsonObj[key]);
+}
+
+arr.forEach(function(element){
+  console.log(element);
+});
